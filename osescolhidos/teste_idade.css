@@ -1,0 +1,21 @@
+h3{
+  font-family: 'Arial';
+}
+
+.form-group label{
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  padding: 6px 0;
+  color: #333;
+}
+
+.form-group input{
+  width: 200px;
+  margin-bottom: 10px;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #999;
+  outline: none;
+}

@@ -1,0 +1,11 @@
+<?php 
+	include '../config/conexao.php';
+
+	if (!isset($_GET['valor'])){
+		$id = null;
+	}
+	else {
+		$id = intval($_GET['valor']);
+		$query = $mysqli->query("delete from galeria_imagens WHERE id = ". $id ) or die ($mysqli->error);
+	}
+?>

@@ -1,0 +1,21 @@
+// 2. $(document).ready()
+
+Quando o documento ficar pronto, executa a função -- (document) = toda a página
+Formas de execução
+
+$(document).ready(function(){
+	alert("Opa, tudo bem?");
+});
+
+OU
+
+$(function(){
+	alert("Opa, legal?");
+});
+
+OU
+
+function tudoPronto(){
+	alert("Tudo pronto!");
+}
+$(document).ready(tudoPronto);

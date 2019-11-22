@@ -1,0 +1,19 @@
+$('#teste').html("Esse é <strong>negrito</strong>");
+//// Substitui um valor
+
+$('input').val("Teste");
+
+$('input').after("<div>Texto qualquer</div>");
+//// Adiciona após o elemento
+
+$('input').after("<div>Texto qualquer</div>");
+//// Adiciona antes do elemento
+
+$('ul').append("<li>Item 5</li>");
+//// Adiciona no final a uma tag já existente
+
+$('ul').prepend("<li>Item 0</li>");
+//// Adiciona no início de uma tag existente
+
+$('input').remove();
+//// Remover campo do html

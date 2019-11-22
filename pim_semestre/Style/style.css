@@ -1,0 +1,205 @@
+@font-face {
+    src: url("../Fonts/TaxiDriver.ttf");
+    font-family: "Taxi Driver";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 16px;
+    transition: all 0.4s ease-out;
+}
+.max-header {
+    background-color: #2574a9;
+    height: 100px;
+}
+.min-header {
+    background-color: #c5eff7;
+    height: 80px;
+}
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas: "lgo ... nav";
+    grid-template-columns: auto 1fr auto;
+    align-content: center;
+}
+.log {
+    grid-area: lgo;
+}
+.logo svg {
+    fill-opacity: 0;
+    transition: all 0.4s ease-out;
+}
+.max-logo img {
+    width: 300px;
+    fill: #c5eff7;
+}
+.min-logo img {
+    width: 280px;
+    fill: #2574a9;
+}
+.nav-bar {
+    grid-area: nav;
+    display: grid;
+    align-content: center;
+}
+.nav-bar ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+.nav-bar a {
+    position: relative;
+    font-family: "Taxi Driver";
+    text-transform: uppercase;
+    transition: all 0.4s ease-out;
+}
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 0.2s ease-out;
+}
+.nav-bar a:hover::after {
+    transform: scaleX(1);
+}
+.nav-bar a::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: all 0.2s ease-out;
+}
+.nav-bar a:hover::before {
+    transform: scaleX(1);
+}
+.max-nav a {
+    font-size: 1em;
+    color: #c5eff7;
+}
+.min-nav a {
+    font-size: 0.875em;
+    color: #2574a9;
+}
+.ghost {
+    width: 100%;
+    height: 100px;
+    background-color: #cae1f1;
+}
+/*Aplicativo mobile */
+@media (max-width: 768px) {
+    .max-header {
+        height: 80px;
+    }
+    .min-header {
+        height: 60px;
+    }
+    .container {
+        position: relative;
+        padding: 0 20px;
+        grid-template-areas: 
+            "lgo ... mnu";
+    }
+    .max-logo img {
+        width: 220px;
+    }
+    .min-logo img {
+        width: 180px;
+    }
+    .menu {
+        grid-area:mnu;
+        display: grid;
+        align-content: center;
+    }
+    .hamburguer {
+        position: relative;
+        width: 28px;
+        height: 3px;
+        background-color: #c5eff7;
+    }
+    .hamburguer::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #c5eff7;
+    }
+    .hamburguer::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #c5eff7;
+    }
+    .nav-bar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #2980b9;
+        transform: translateX(-100%);
+        transition: all 0.4s ease-out;
+    }
+    .menu-opened {
+        transform: translateX(0);
+    }
+    .nav-bar ul {
+        justify-content: center;
+        grid-auto-flow: row;
+        grid-gap: 80px;
+    }
+    .nav-bar{
+        text-align: center;
+    }
+}
+/**/
+main {
+    font-size: 20px;
+}
+main section {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: "Taxi Driver";
+    font-size: 1em;
+    color: #2574a9;
+}
+main section:nth-child(odd) {
+    height: 100vh;
+    background-color: #cae1f1;
+}
+main section:nth-child(even) {
+    height: 100vh;
+    background-color: #b7d5eb;
+}

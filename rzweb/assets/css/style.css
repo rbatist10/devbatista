@@ -1,0 +1,2020 @@
+/*
+Author       : Juel_bd
+Template Name: Orion - One Page Agency HTML Template
+Version      : 1.0
+*/
+
+/*=============================================================
+
+	CSS INDEX
+  
+    01. Theme default CSS
+    02. Header CSS
+    03. Hero CSS
+    04. Features CSS
+    05. Watch Video CSS
+    06. Team CSS
+    07. Portfolio CSS
+    08. Pricing CSS
+    09. Funfact CSS
+    10. Testimonial CSS
+    11. How We Work CSS
+    12. Blog CSS
+    13. Clients CSS
+    14. Contact CSS
+    15. Footer CSS
+	
+=============================================================*/
+
+
+/*----------------------------------------*/
+/*  1. Theme default CSS
+/*----------------------------------------*/
+
+.clear {
+    clear: both
+}
+
+::-moz-selection {
+    background: #00b0ff;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #00b0ff;
+    color: #fff;
+    text-shadow: none;
+}
+
+.no-mar {
+    margin: 0!important;
+}
+
+.no-pad {
+    padding: 0!important;
+}
+
+/*START PRELOADER DESIGN*/
+.preloader {
+	background:#5a5cf0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;	
+}
+.spinner {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	font-size: 10px;
+	text-indent: -12345px;
+	z-index: 10000;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background:#fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+header.navbar-fixed-top {
+    animation-duration: 0.8s;
+    animation-name: fadeInDown;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
+    left: 0;
+    padding-top: 20px;
+    position: fixed !important;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.mar-bot-50 {
+    margin-bottom: 50px;
+}
+
+.mar-bot-40 {
+    margin-bottom: 40px;
+}
+
+.mar-bot-35 {
+    margin-bottom: 35px;
+}
+
+.mar-bot-30 {
+    margin-bottom: 30px;
+}
+
+.mar-top-30 {
+    margin-top: 30px;
+}
+
+.mar-top-80 {
+    margin-top: 80px;
+}
+
+.mar-top-80 {
+    margin-top: 80px;
+}
+
+.mar-top-55 {
+    margin-top: 55px;
+}
+
+.mar-top-108 {
+    margin-top: 108px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #fff;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #666;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+textarea {
+    letter-spacing: 1px;
+}
+
+
+
+/* 
+Table Of Contents
+=========================
+- Default Typography
+- Custom Typography
+=========================
+*/
+
+
+/* 
+--------------------------
+- Default Typography
+--------------------------
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1.5px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 70px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin: 0;
+}
+
+p img {
+    margin: 0;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* em and strong */
+
+em {
+    font: 15px/30px;
+}
+
+strong,
+b {
+    font: 15px/30px;
+}
+
+small {
+    font-size: 11px;
+    line-height: inherit;
+}
+
+
+/*  blockquotes */
+
+blockquote {
+    border-left: 0 none;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+    padding-left: 40px;
+    position: relative;
+}
+
+blockquote::before {
+    color: #4e5665;
+    content: "";
+    font-family: FontAwesome;
+    font-size: 36px;
+    left: 20px;
+    line-height: 0;
+    margin: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 20px;
+}
+
+blockquote p {
+    font-style: italic;
+    padding: 0;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+blockquote cite:before {
+    content: "\2014 \0020";
+}
+
+blockquote cite a,
+blockquote cite a:visited {
+    color: #8B9798;
+    border: none
+}
+
+/* abbreviations */
+
+abbr {
+    color: #444;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: .6px;
+}
+
+abbr:hover {
+    cursor: help;
+}
+
+/* links */
+
+a,
+a:visited {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #111;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    outline: 0;
+}
+
+a:hover,
+a:active {
+    color: #00b0ff;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+p a,
+p a:visited {
+    line-height: inherit;
+    outline: 0;
+}
+
+a.active-page {
+    color: #e6ae48!important;
+}
+
+
+/* list */
+
+ul,
+ol {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+ul {
+    margin: 0;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+    margin-left: 0px;
+}
+
+ul.square {
+    list-style: square outside;
+}
+
+ul.circle {
+    list-style: circle outside;
+}
+
+ul.disc {
+    list-style: disc outside;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 0;
+}
+
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+    margin-bottom: 0px;
+}
+
+li {
+    line-height: 18px;
+    margin-bottom: 0px;
+}
+
+ul.large li {}
+
+li p {}
+
+
+/* definition list */
+
+dl {
+    margin: 12px 0;
+}
+
+dt {
+    margin: 0;
+    color: #11ABB0;
+}
+
+dd {
+    margin: 0 0 0 20px;
+}
+
+button {}
+a.rm-btn {
+    background-color: #7163ee;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 25px;
+    color: #fcf6ff;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+
+.section-title {
+    position: relative;
+    text-align: center;
+    max-width: 767px;
+    margin: 25px auto;
+}
+
+.section-title span {
+    display: block;
+    color: #7163ee;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 30px;
+	font-weight: 500;
+}
+
+.section-title h3 {
+    font-size: 44px;
+    letter-spacing: 0px;
+    color: #12100e;
+    font-weight: 600;
+    margin: 15px auto;
+    line-height: 50px;
+}
+
+.section-title p {
+	font-size: 16px;
+	line-height: 28px;
+	color: #666;
+	font-weight: 300;
+	max-width: 75%;
+	margin: 0 auto;
+}
+a.rm-btn:hover {
+    -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow:0 10px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.section-padding {
+    padding: 80px 0px;
+}
+.st-left{margin-left: -0px !important;}
+/*----------------------------------------*/
+/*  2. Header CSS
+/*----------------------------------------*/
+
+.header-area {
+    padding: 25px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    top: 0;
+}
+
+.header1.navbar-fixed-top {
+	background: #0067e4;
+	
+}
+.orion-nav {}
+
+.orion-nav a.navbar-brand {}
+
+.orion-nav a.navbar-brand img.logo {}
+
+.orion-nav ul.navbar-nav {}
+
+.orion-nav ul.navbar-nav li.nav-item {
+    position: relative;
+    transition: .5s ease;
+    margin: 5px 8px;
+}
+
+
+.orion-nav ul.navbar-nav li.nav-item.active {
+    position: relative;
+}
+
+.orion-nav ul.navbar-nav li.nav-item a {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #fcf6ff;
+    display: block;
+    padding: 10px 5px;
+	transition: all 0.3s ease 0s;
+}
+
+
+.orion-nav ul.navbar-nav li.nav-item .get-app-now-btn {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px 30px;
+    transition: all 0.3s ease 0s;
+}
+
+.orion-nav ul.navbar-nav li.nav-item .get-app-now-btn:hover {
+    background-color: #7163ee;
+	border: 2px solid #7163ee;
+}
+
+.gradientBorder {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2px;
+    margin-bottom: -2px;
+    cursor: pointer;
+    color: #474E51;
+}
+
+.gradientBorder::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to top right, #13f3b9, #5878F3);
+    transition: transform .3s ease-in-out;
+    transform: translateX(-101%);
+}
+
+.gradientBorder:hover::before {
+    transform: translateX(0);
+}
+
+/*============== End Header CSS ==============*/
+
+
+
+
+/*----------------------------------------*/
+/*  3. Hero CSS
+/*----------------------------------------*/
+.hero-area{
+    position: relative;
+    background-image: url(../img/bg/hero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 0px 80px;
+}
+
+
+.hero-content {
+    position: relative;
+    margin: 25px auto 80px;
+    padding: 25px 0px 100px;
+}
+
+.hero-content .hero-text {
+    position: relative;
+    padding: 80px 0px;
+}
+
+.hero-content .hero-text h2 {
+    color: #fcf6ff;
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.hero-content .hero-text span {
+    font-weight: 700;
+}
+
+.hero-content .hero-text p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #f2f4f5;
+    letter-spacing: 0px;
+    margin: 25px auto;
+}
+
+a.hero-btn {
+    background-color: #7163ee;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+a.hero-btn:hover {
+    -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+.hero-content .hero-text a {
+    color: #fcf6ff;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+.hero-content .hero-img {
+    position: relative;
+    text-align: center;
+}
+/*============== End Hero CSS ==============*/
+
+
+
+
+
+/*----------------------------------------*/
+/*  4. Features CSS
+/*----------------------------------------*/
+.features-area {
+    position: relative;
+}
+.features-area:before {
+    position: absolute;
+    content: '';
+    height: 1375px;
+    width: 600px;
+    background-image: url(../img/bg/bg-1.png);
+    background-size: 100% 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.single-features {
+    position: relative;
+    max-width: 350px;
+    margin: 25px auto;
+    text-align: center;
+    background-color: #f5f7fc;
+    transition: .5s ease;
+    border-top-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+}
+.single-features:hover {
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+.single-features .sf-icon {
+    position: relative;
+    background-color: #000;
+    padding: 35px 15px;
+    border-top-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+    transition: .5s ease;
+}
+.single-features .sf-icon:before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/bg/pricing-shape.png);
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    left: 0;
+    top: 0;
+}
+.sf-1 .sf-icon {
+    background-color: #0ecad4;
+	opacity:0.7;
+}
+.sf-2 .sf-icon {
+    background-color: #5d67f0;
+	opacity:0.7;
+}
+.sf-3 .sf-icon {
+    background-color: #0105de;
+	opacity:0.7;
+}
+.sf-icon img,.sf-icon i {
+    transition: .5s ease;
+}
+.single-features:hover .sf-icon img,
+.single-features:hover .sf-icon i {
+    transform: scaleX(-1);
+}
+.single-features .sf-text {
+    position: relative;
+    padding: 20px;
+}
+
+.single-features .sf-text h4 {
+    color: #12100e;
+    font-size: 28px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 15px auto;
+}
+
+.single-features .sf-text p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.single-features .sf-text a.sf-btn {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    background-color: #fff;
+    padding: 12px 40px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 15px auto;
+}
+
+.single-features:hover a.sf-btn {
+    background-color: #7163ee;
+    color: #fff;
+}
+
+/*============== End Features CSS ==============*/
+
+
+
+
+/*----------------------------------------*/
+/*  5. Watch Video CSS
+/*----------------------------------------*/
+.watch-video {
+    position: relative;
+}
+
+.watch-video .section-title {
+    text-align: left;
+}
+
+.watch-video .section-text {
+    position: relative;
+}
+
+.section-text p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #12100e;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+.watch-video .video-area {
+    position: relative;
+    text-align: center;
+}
+
+.va-play-btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    transition: .5s ease;
+}
+
+.va-play-btn i {
+    font-size: 24px;
+    color: #7163ee;
+}
+.va-play-btn:hover {
+    transform: scale(1.05);
+}
+.vidBox {
+    position: relative;
+    max-width: 767px;
+    width: 100%;
+}
+
+.vidBox iframe {
+    width: 100%;
+    min-height: 280px;
+    border: none;
+}
+
+.vidBox button.close {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    font-size: 25px;
+    color: #F44336;
+    opacity: 1;
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 10%;
+}
+/*============== End Watch Video CSS ==============*/
+
+
+
+
+
+/*----------------------------------------*/
+/*  6. Team CSS
+/*----------------------------------------*/
+.team-area {
+    position: relative;
+}
+
+.team-area .section-title {
+    margin-bottom: 60px;
+}
+
+.single-team {
+    position: relative;
+    max-width: 255px;
+    margin-bottom: 25px;
+    transition: .5s ease;
+}
+
+.single-team .st-img {
+    position: relative;
+}
+
+.single-team .st-hover {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    top: 50%;
+    left: 50%;
+    background-image: -moz-linear-gradient( 31deg, rgb(14,202,212) 0%, rgb(54,153,226) 18%, rgb(93,103,240) 51%, rgb(47,54,231) 86%, rgb(1,5,222) 100%);
+    background-image: -webkit-linear-gradient( 31deg, rgb(14,202,212) 0%, rgb(54,153,226) 18%, rgb(93,103,240) 51%, rgb(47,54,231) 86%, rgb(1,5,222) 100%);
+    background-image: -ms-linear-gradient( 31deg, rgb(14,202,212) 0%, rgb(54,153,226) 18%, rgb(93,103,240) 51%, rgb(47,54,231) 86%, rgb(1,5,222) 100%);
+    opacity: 0;
+    overflow: hidden;
+    transition: .5s ease;
+
+}
+.single-team:hover .st-hover {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+.single-team .st-social {
+    position: relative;
+    margin-top: 140px;
+}
+.single-team .st-social ul {
+    position: relative;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+}
+.single-team .st-social ul li {
+    position: relative;
+    display: inline-block;
+}
+.single-team .st-social ul li a {
+    font-size: 20px;
+    margin: 2px;
+    display: block;
+    color: #fff;
+    letter-spacing: 0px;
+}
+.single-team .st-social ul li a i{}
+.single-team .st-info {
+    position: relative;
+    background-color: #f5f7fc;
+    padding: 15px;
+    text-align: center;
+}
+
+.single-team .st-info h4 {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #12100e;
+    font-weight: 600;
+    line-height: 24px;
+    transition: .5s ease;
+}
+.single-team:hover .st-info h4 {
+    color: #7163ee;
+}
+.single-team .st-info p {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #12100e;
+    line-height: 20px;
+}
+
+
+
+.single-team:hover {
+    box-shadow: 0px 12px 17.64px 0.36px rgba(1, 5, 222, 0.07);
+}
+
+.team-btn {
+    position: relative;
+    text-align: center;
+    margin: 50px auto 80px;
+}
+
+/*============== End Team CSS ==============*/
+
+
+
+
+
+/*----------------------------------------*/
+/*  7. Portfolio CSS
+/*----------------------------------------*/
+
+.our_portfolio {
+    position: relative;
+    margin: 0 auto;
+	padding-bottom:50px;
+}
+.our_portfolio .section-title {
+    margin-bottom: 60px;
+}
+.mix{
+	display: none;
+}
+.our_portfolio:before {
+    position: absolute;
+    content: '';
+    height: 1375px;
+    width: 600px;
+    background-image: url(../img/bg/bg-2.png);
+    background-size: 100% 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.portfolio_filter ul {
+	list-style: none;
+	margin-bottom: 60px;
+}
+@media only screen and (max-width:768px) { 
+.portfolio_filter ul{width: 80%;}
+}
+.portfolio_filter ul li {
+	font-weight: 500;
+	text-transform: capitalize;
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	font-size: 16px;
+	color: #252d35;
+	transition: .5s;
+	margin: 0 3px 0px;
+	border-right: 2px solid #eee;
+	letter-spacing: 0px;
+}
+.portfolio_filter ul li:last-child {
+	border-right: 0px;
+}
+.portfolio_filter .active {
+	color: #5a5cf0;
+}
+.box{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.box:before{
+    content: "";
+    background:rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.box:hover:before{ opacity: 0.8; }
+.box img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+}
+.box:hover img{ transform: scale(1.1,1.1); }
+.box .box-content{
+    text-align: center;
+    opacity: 0;
+    filter: blur(5px);
+    position: absolute;
+    bottom: -25px;
+    left: -25px;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.box:hover .box-content{
+    opacity: 1;
+    filter: blur(0);
+    left: 10px;
+    bottom: 10px;
+}
+.box .title {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-left: 20px;
+	letter-spacing: 0px;
+	margin-bottom: 10px;
+}
+.box .post {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 0px;
+	margin-left: -10px;
+	display: inline-block;
+	transform: translateY(-15px);
+}
+.box .icon{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    z-index:  2;
+    transition: all 0.3s;
+}
+.box:hover .icon{
+    top: 10px;
+    right: 10px;
+}
+.box .icon li{ display: inline-block; }
+.box .icon li a {
+	color: #5a5cf0;
+	background-color: #fff;
+	font-size: 15px;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	margin: 0 3px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	display: block;
+	transition: all 0.3s ease 0s;
+	text-align: center;
+}
+.box .icon li a:hover{
+    color: #fff;
+    background: #5a5cf0;
+    border: 1px solid #5a5cf0;
+}
+.port-icon{
+color: #fff!important;
+background: #5a5cf0!important;	
+border: 1px solid #5a5cf0!important;
+}
+.pfoliom-btn {
+    position: relative;
+    text-align: center;
+    margin: 25px auto;
+    padding: 40px 0px;
+}
+/*============== End Portfolio CSS ==============*/
+
+
+
+/*----------------------------------------*/
+/*  8. Pricing CSS
+/*----------------------------------------*/
+.pricing-area {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.pricing-area .section-title {
+    margin-bottom:60px;
+}
+
+.pricing-filter-btn {
+    position: relative;
+}
+
+.pricing-filter-btn nav {
+    position: relative;
+    text-align: center;
+}
+
+.pricing-filter-btn nav .nav-tabs {
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #f5f7fc;
+    border-radius: 25px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0px auto 25px;
+}
+
+.pricing-filter-btn nav .nav-tabs a {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #12100e;
+    padding: 10px 25px;
+    margin: 0px -3px;
+    border-radius: 25px;
+    border: none;
+    transition: .5s ease;
+}
+
+.pricing-filter-btn nav .nav-tabs a.active {
+    background-color: #5a5cf0;
+    border: none;
+    color: #fff;
+}
+
+.single-pricing {
+    position: relative;
+    max-width: 350px;
+    margin: 25px auto;
+    background-color: #f5f7fc;
+    padding: 35px 25px;
+    transition: .5s ease;
+}
+.sp-best,
+.single-pricing:hover {
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.single-pricing .sp-head {
+    position: relative;
+    width: 100%;
+}
+
+.single-pricing .sp-head .spp-name {
+    float: left;
+    max-width: 140px;
+    width: 100%;
+}
+
+.single-pricing .sp-head .spp-price {
+    position: relative;
+    text-align: right;
+    padding-top: 25px;
+}
+
+
+
+.single-pricing .sp-head .spp-price p {
+    position: relative;
+    font-size: 36px;
+    letter-spacing: 0px;
+    color: #12100e;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.single-pricing .sp-head .spp-price p span {
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 0px;
+    left: -12px;
+    bottom: -12px;
+    font-weight: 600;
+}
+
+.single-pricing .sp-head .spp-name p {
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #12100e;
+    font-weight: 600;
+}
+
+.single-pricing .sp-head .spp-name h4 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: rgba(18, 16, 14, .75);
+    font-weight: 700;
+    transition: .5s ease;
+}
+
+
+
+.single-pricing .sp-icon {
+    position: relative;
+    height: 0px;
+    width: 0px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 25px auto;
+    padding-top: 15px;
+    transition: .5s ease;
+}
+.sp-best .sp-icon,
+.single-pricing:hover .sp-icon {
+    box-shadow: 0px 12px 17.64px 0.36px rgba(1, 5, 222, 0.07);
+}
+
+
+.single-pricing .sp-icon i {
+    font-size: 24px;
+    line-height: 30px;
+    color: #2a2826;
+}
+.sp-best .sp-icon i,
+.single-pricing:hover .sp-icon i {
+    color: #5d6eef;
+}
+.single-pricing ul.pricing-list {
+    position: relative;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.single-pricing ul.pricing-list li {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin: 6px auto;
+    color: rgba(18, 16, 14, .65);
+    font-weight: 300;
+}
+
+.single-pricing .sp-button {
+    position: relative;
+    text-align: center;
+    margin: 40px auto 20px;
+}
+
+.sp-best a.pricing-btn,
+.single-pricing:hover a.pricing-btn {
+    background-color: #7163ee;
+     color: #fcf6ff;
+}
+a.pricing-btn {
+    background-color: #fff;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 25px;
+    color: rgba(18, 16, 14, .65);
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+
+.sp-best .sp-head .spp-name h4,
+.single-pricing:hover .sp-head .spp-name h4 {
+    color: #7163ee;
+}
+
+span.preco {
+    margin-left: -10px;
+}
+  
+/*============== End Pricing CSS ==============*/
+
+
+
+
+/*----------------------------------------*/
+/*  9. Funfact CSS
+/*----------------------------------------*/
+
+.funfact-area {
+    position: relative;
+    background-image: url(../img/bg/testimonial-bg.jpg);
+    background-size: 100% 100%;
+    padding: 80px 0px;
+}
+.counterup-wrapper {
+    position: relative;
+    background-color: rgba(1, 5, 222, .10);
+    padding: 0px;
+    text-align: center;
+}
+
+.no-padding{padding:0px;}
+.single-counter-up {
+    position: relative;
+    margin: 0px auto;
+    padding: 25px 25px;
+    transition: .5s ease;
+}
+
+.single-counter-up:hover
+ {
+    background-color: #2830e1;
+}
+
+.single-counter-up .scu-counter {
+    position: relative;
+    margin: 15px auto;
+}
+
+.single-counter-up .scu-counter h4 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.single-counter-up .scu-counter p {
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, .65);
+}
+
+.single-counter-up .scu-icon {
+    position: relative;
+    margin: 15px auto;
+}
+
+.single-counter-up .scu-icon i {
+    font-size: 36px;
+    color: #fff;
+}
+/*============== End Funfact CSS ==============*/
+
+
+
+
+/*----------------------------------------*/
+/*  10. Testimonial CSS
+/*----------------------------------------*/
+
+.customer-review {
+    position: relative;
+    padding: 60px 0px;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.customer-review .section-title {
+    margin-bottom: 60px;
+}
+
+.customer-review .cr-next-prev {
+    position: relative;
+}
+
+.customer-review .cr-next-prev .rp-slider-nav {
+    position: relative;
+    text-align: right;
+    margin: 95px auto;
+}
+
+.customer-review .cr-next-prev .rp-slider-nav .my-controls-btns {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.customer-review .cr-next-prev .rp-slider-nav .my-controls-btns i {
+    font-size: 30px;
+}
+
+.testimonial-wrapper {
+    position: relative;
+}
+
+.testimonial-wrapper .tm-carousel {}
+
+.tm-carousel .item {}
+
+.single-testimonial {
+    position: relative;
+    max-width: 420px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #f5f7fc;
+}
+.single-testimonial .st-icon {
+    position: relative;
+    background-color: #f5f7fc;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 14px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.single-testimonial .st-icon i {
+    font-size: 20px;
+    color: #3c3d3c;
+	transition:0.3s;
+}
+.single-testimonial:hover .st-icon i{color:#5d6eef;}
+.single-testimonial p {
+	padding: 20px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.single-testimonial .st-info {
+    position: relative;
+    background-color: #f5f7fc;
+    padding: 15px;
+}
+
+.single-testimonial .st-info h4 {
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: #12100e;
+    line-height: 24px;
+}
+
+.single-testimonial .st-info p {
+    font-size: 14px;
+    padding: 0;
+    line-height: 24px;
+    color: #12100e;
+}
+
+.testimonial-wrapper .tm-carousel .owl-dots,.testimonial-wrapper .tm-carousel .owl-nav {
+    display: none;
+}
+/*============== End Testimonial CSS ==============*/
+
+
+
+
+/*----------------------------------------*/
+/*  11. How We Work CSS
+/*----------------------------------------*/
+.how-we-work {
+    position: relative;
+}
+
+.how-we-work .section-title {
+    margin-bottom: 60px;
+}
+
+.single-hww {
+	margin-bottom:30px;
+	border: 1px solid #eee;
+	background-color: #f5f7fc;
+	transition: .5s ease;
+	padding: 30px 60px;
+}
+
+.single-hww:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.single-hww .sw-text {
+    position: relative;
+}
+
+.single-hww .sw-text h4 {
+    font-size: 22px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    margin: 15px auto;
+}
+
+.single-hww .sw-text p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.single-hww .sw-text a {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #12100e;
+    margin: 15px auto;
+    font-weight: 600;
+}
+.single-hww:hover .sw-text a {
+    color: #7163ee;
+}
+.single-hww .sw-icon {
+	position: relative;
+	height: 70px;
+	width: 70px;
+	background-color: #5b60f0;
+	color:#fff;
+	border-radius: 50%;
+	text-align: center;
+	transition: .5s ease;
+	line-height: 76px;
+	margin-bottom: 30px;
+}
+.single-hww .sw-icon i {
+    font-size: 30px;
+}
+
+
+/*============== End How We Work CSS ==============*/
+
+
+/*----------------------------------------*/
+/*  12. Blog CSS
+/*----------------------------------------*/
+.blog-area {
+    position: relative;
+}
+.blog-area:before {
+    position: absolute;
+    content: '';
+    height: 1375px;
+    width: 600px;
+    background-image: url(../img/bg/bg-1.png);
+    background-size: 100% 100%;
+    left: 0;
+    top: -10%;
+    z-index: -1;
+}
+.blog-area .section-title {
+    margin-bottom: 60px;
+}
+
+.single-blog {
+    position: relative;
+    max-width: 350px;
+    border:1px solid #eee;
+    background-color: #fff;
+}
+
+.single-blog .sb-head {
+    position: relative;
+}
+
+.single-blog .sb-head .sb-img {}
+
+.single-blog .sb-head .sb-img img {}
+
+.single-blog .sb-head .sb-meta {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: -moz-linear-gradient( 31deg, rgb(14,202,212) 0%, rgb(54,153,226) 20%, rgb(93,103,240) 57%, rgb(1,5,222) 100%);
+    background-image: -webkit-linear-gradient( 31deg, rgb(14,202,212) 0%, rgb(54,153,226) 20%, rgb(93,103,240) 57%, rgb(1,5,222) 100%);
+    background-image: -ms-linear-gradient( 31deg, rgb(14,202,212) 0%, rgb(54,153,226) 20%, rgb(93,103,240) 57%, rgb(1,5,222) 100%);
+    opacity: .8;
+}
+
+.single-blog .sb-head .sb-meta ul {
+    position: relative;
+    padding: 15px;
+    list-style-type: none;
+}
+
+.single-blog .sb-head .sb-meta ul li {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    display: inline-block;
+    width: 48%;
+}
+.single-blog .sb-head .sb-meta ul li:last-child {
+    text-align: right;
+}
+.single-blog .sb-head .sb-meta ul li a {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+}
+
+.single-blog .sb-head .sb-meta ul li i {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    padding-right: 8px;
+}
+
+.single-blog .sb-text {
+    position: relative;
+    padding: 25px;
+    padding-bottom: 18px;
+}
+
+.single-blog .sb-text h4 a{
+	font-size: 18px;
+	letter-spacing: 0px;
+	color: #12100e;
+	font-weight: 600;
+	line-height: 26px;
+}
+.single-blog:hover .sb-text h4 a{color:#5a5cf0;}
+.single-blog .sb-text p {
+	font-size: 16px;
+	letter-spacing: 0px;
+	line-height: 24px;
+	margin: 15px auto 10px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #eee;
+}
+.single-blog .sb-text a {
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.single-blog:hover .sb-text a{color:#5a5cf0;}
+/*============== End Blog CSS ==============*/
+
+
+
+/*----------------------------------------*/
+/*  13. Clients CSS
+/*----------------------------------------*/
+
+.clients-area {
+    position: relative;
+}
+
+.clients-area .section-title {
+    margin-bottom: 60px;
+}
+
+.clients-wrapper {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.client-carousel {
+    position: relative;
+}
+
+.client-carousel .owl-nav,.client-carousel .owl-dots {
+    display: none;
+}
+
+.client-carousel .item {}
+
+.client-carousel .item .single-client {
+    position: relative;
+    text-align: center;
+}
+
+.client-carousel .item .single-client .sc-img {
+    position: relative;
+}
+
+.client-carousel .item .single-client .sc-img img {
+    width: auto;
+    margin: 0 auto;
+}
+
+/*============== End Clients CSS ==============*/
+/*----------------------------------------*/
+/*  14. Contact CSS
+/*----------------------------------------*/
+.contact-area {
+    position: relative;
+    padding: 60px 0px;
+    background-image: url(../img/bg/contact.jpg);
+    background-size: 100% 100%;
+}
+
+.contact-area .section-title {
+    margin-bottom:60px;
+}
+
+.contact-form {
+    position: relative;
+}
+
+.contact-form form.cf {
+    position: relative;
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form form.cf input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e4e6ea;
+    margin-bottom: 25px;
+    padding: 0px 25px;
+    letter-spacing: 0px;
+    font-size: 16px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.contact-form form.cf 
+ textarea {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #e4e6ea;
+    margin-bottom: 25px;
+    padding: 16px 25px;
+    letter-spacing: 0px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.contact-form .cf-btn {
+    border: none;
+    background-color: #7163ee;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 25px;
+    color: #fcf6ff;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin: 0px auto;
+    text-align: left;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.contact-form .cf-btn:hover {
+    -webkit-box-shadow: 0px 2px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 12px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 12px -4px rgba(0,0,0,0.75);
+}
+/*============== End Contact CSS ==============*/
+
+/*----------------------------------------*/
+/*  15. Footer CSS
+/*----------------------------------------*/
+
+
+.footer-area {
+    position: relative;
+    background-image: url(../img/bg/footer.png);
+    background-size: 100% 100%;
+    background-color: #f4f7fc;
+}
+.newsletter-area {
+    position: relative;
+    padding: 160px 0px 60px;
+}
+
+.nl-title {
+    position: relative;
+    margin: 25px auto;
+}
+
+.nl-title h3 {
+    color: #fff;
+    font-size: 42px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 50px;
+    margin: 15px auto;
+}
+
+.nl-title p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, .65);
+    font-weight: 300;
+}
+
+.nl-fom {
+    position: relative;
+    text-align: right;
+    margin: 60px auto;
+}
+
+.nl-fom form.nlf {
+    position: relative;
+    max-width: 490px;
+    margin: 0 auto;
+}
+
+.nl-fom form.nlf input {
+    width: 100%;
+    border: none;
+    height: 60px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    padding: 0px 25px;
+}
+
+.nl-fom form.nlf button.nl-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 160px;
+    letter-spacing: 0px;
+    font-size: 17px;
+    color: #c5ebd3;
+    background-color: #7163ee;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll-top {
+    position: absolute;
+    right: 20%;
+    top: 40px;
+}
+
+a.scrl-top-btn {
+    color: #fff;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: #7163ee;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+
+.footer-widget-area {
+    position: relative;
+    padding: 50px 0px;
+}
+
+.footer-widget {}
+
+.footer-widget h4 {
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, .90);
+    font-weight: 600;
+}
+
+.footer-widget .footer-links {}
+
+.footer-widget .footer-links ul.fl {
+    position: relative;
+    padding: 0;
+    list-style-type: none;
+    margin: 45px auto;
+}
+
+.footer-widget .footer-links ul.fl li {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, .65);
+    font-weight: 300;
+    line-height: 24px;
+    margin: 5px auto;
+}
+
+.footer-widget .footer-links ul.fl li a {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, .65);
+    line-height: 28px;
+}
+.footer-widget .footer-links ul.fl li a:hover {
+    color: #fff;
+}
+.footer-widget .footer-links ul.fl li i {
+    padding-right: 10px;
+}
+
+.footer-widget .footer-links ul.footer-social {
+    position: relative;
+    padding: 0px;
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+.footer-widget .footer-links ul.footer-social li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.footer-widget .footer-links ul.footer-social li a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 5px;
+    display: block;
+    padding: 2px;
+}
+
+.footer-widget .footer-links ul.footer-social li:first-child {
+    margin-left: 0px;
+}
+
+
+
+
+
+.copyright-text {
+    position: relative;
+    text-align: center;
+    background-color: #0067e4;
+    padding: 15px 0px;
+}
+
+.copyright-text p {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300;
+}
+/*============== End Footer CSS ==============*/

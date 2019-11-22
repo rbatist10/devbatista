@@ -1,0 +1,3 @@
+É possível alterar pelo editor de texto, salvando o arquivo como ISO 8859-1
+
+Assim é mais facil para todos os arquivos terem a mesma codificação.

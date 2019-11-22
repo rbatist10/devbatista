@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Curso Completo do Desenvolvedor Web</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+	</head>
+	<body>
+			<form method="POST" action="form.php">
+				<div class="form-group">
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required autofocus tabindex="1" disabled />
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="seu@email.com.br" required tabindex="2" readonly />
+				</div>
+				<div class="form-group">
+					<label for="nascimento">Nascimento</label>
+					<input type="date" name="nascimento" id="nascimento" class="form-control" required min="2016-01-01" max="2019-01-15" />
+				</div>
+				<div class="form-group">
+					<label>Sexo</label><br/>
+					<input type="radio" name="sexo" id="masculino"/>
+					<label for="masculino">Masculino</label>
+					<input type="radio" name="sexo" id="feminino"/>
+					<label for="feminino">Feminino</label>				
+				</div>
+				<div class="form-group">
+					<input type="checkbox" name="li" id="li" required checked/>
+					<label for="li">Li o contrato e aceito</label>
+				</div>
+				<div class="form-group">
+					<label for="volume">Volume</label>
+					<input type="range" name="volume" id="volume" min="0" max="100" value="25" />
+				</div>
+				<div class="form-group">
+					<label for="meter">Batieria</label>
+					<meter name="meter" min="0" max="100" low="15" value="12">12</meter>
+				</div>
+				<div class="form-group">
+					<label for="carregando">Bateria</label>
+					<progress min="0" max="100" value="60">60%</progress>
+				</div>
+				<div class="form-group">
+					<label for="ano">Ano Fabricação</label>
+					<input type="number" name="ano" id="ano" class="form-control" min="1920" max="2018" value="2018" tabindex="3" />
+				</div>
+				<div class="form-group">
+					<label for="cor">Cor</label>
+					<input type="color" name="cor" id="cor" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="url">url</label>
+					<input type="url" name="url" id="url" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="busca">Busca</label>
+					<input type="search" name="busca" id="busca" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="mensagem">Mensagem</label>
+					<textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="estados">Estados</label>
+					<select name="estados" id="estados">
+						<optgroup label="Sudeste">
+							<option value="SP" selected>São Paulo</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="MG">Minas Gerais</option>
+						</optgroup>
+						<optgroup label="Sul">
+							<option value="PR" selected>Paraná</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="RS">Rio Grande do Sul</option>
+						</optgroup>
+					</select>
+				</div>
+				<input type="hidden" name="id" value="1" />
+
+				<div class="form-group">
+					<label for="senha">Senha</label>
+					<input type="password" name="senha" id="senha" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="mes">Mês</label>
+					<input type="month" name="mes" id="mes" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="semana">Semana</label>
+					<input type="week" name="semana" id="semana" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="time">Hora</label>
+					<input type="time" name="time" id="time" class="form-control" />
+				</div>
+
+				<div>
+					<input type="text" list="navegadores" class="form-control" />
+					<datalist id="navegadores">
+						<option value="Chrome">
+						<option value="Firefox">
+						<option value="Safarie">
+						<option value="Edge">
+					</datalist>
+				</div>
+
+
+
+
+				<div>
+					<button type="submit" class="btn btn-primary">Cadastrar</button>
+				</div>
+			</form>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

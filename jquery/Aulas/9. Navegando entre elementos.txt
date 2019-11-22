@@ -1,0 +1,3 @@
+$('filha').parent() -> Para navegar um elemento anterior
+
+$('irmao').closest(".topo") -> procura o elemento que está mais perto

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>OS ESCOLHIDOS</title>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="icon" type="image/png" href="img/osescolhidos.jpg"/>
+	<link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+	<!-- If you'd like to support IE8 -->
+  	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+<body>
+	<!-- 
+		Criação da navegação principal contendo os links
+	-->
+	<div class="container-fluid" id="nav">
+			<ul id="ulPrincipal" class="nav nav-tabs nav-pills nav-justified"> <!-- nav-pills -->
+				<li id="link"><a href=".divLogo" class="text-uppercase">Home</a></li>
+				<!-- <li id="link"><a href="#">Sobre</a></li> -->
+				<li id="link"><a href="#tituloTecnicos">Técnicos</a></li>
+				<li id="link1"><a href="pag_videos/videos.php">Videos</a></li>
+				<li id="link1"><a href="galeria/galeriaImagens.php">Galeria de imagens</a></li>
+				<li id="link1"><a href="parceiros/parceiros.php">Parceiros</a></li>
+				<li id="link"><a href="#tituloContato">Contato</a></li>
+			</ul>
+	</div>
+	<!-- --------------------------------------- -->
+
+	<!-- 
+		criação do logo e breve introdução
+	-->
+	<div class="container">
+	<div class="divLogo">	
+		<div id="divImgLogo">
+			<img src="img/osescolhidos.jpg" id="imgLogo" class="animated fadeInDown">
+		</div>
+		<div id="divTextLogo">
+			<div id="textP" class="animated fadeInUp">
+				<p>Campeonato de dança em que quatro equipes lideradas por grandes nomes do Sertanejo Universitário, competem entre si para levar o prêmio de campeão e mostrar quem será ... OS ESCOLHIDOS !</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- --------------------------------------- -->
+
+	<div class="container-fluid">
+		<h1 id="tituloBatalha">A batalha vai começar !</h1>
+	</div>
+
+	<!-- Criação do video incentivador -->
+	<div class="container-fluid" id="divVideo">
+		<div id="containerVideo">
+			<video controls poster="img/backpag.jpg" class="bg_video">
+				<source src="videos/video_oficial.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<!-- --------------------------------------- -->
+
+	<div class="container-fluid">
+		<h1 id="tituloTecnicos">Técnicos</h1>
+	</div>
+
+	<!-- criação dos slides dos tecnicos -->
+	<div class="container-fluid">
+		<div id="slides">
+		<!-- <video autoplay loop poster="osescolhidos.jpg" class="bg_video" muted>
+			<source src="videos/fundo4.mp4" type="video/mp4">
+		</video> -->
+			<div class="row">
+				<div class="col-md-3 col-sm-3" id="tecnicos1">
+					<a href="tecnicos/pagFeLala.html"><img src="img/lala.jpg" id="imgTecnico"></a>
+				</div>
+				<div class="col-md-3 col-sm-3" id="tecnicos2">
+					<a href="tecnicos/pagViniKarine.html"><img src="img/vini.jpg" id="imgTecnico"></a>
+				</div>
+				<div class="col-md-3 col-sm-3" id="tecnicos3">
+					<a href="tecnicos/pagBrenoNath.html"><img src="img/nath.jpg" id="imgTecnico"></a>
+				</div>
+				<div class="col-md-3 col-sm-3" id="tecnicos4">
+					<a href="tecnicos/pagRodrigoDani.html"><img src="img/rodrigo.jpg" id="imgTecnico">	</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- --------------------------------------- -->
+
+	<div class="container">
+		<h1 id="tituloContato">Entre em contato</h1>
+	</div>
+
+	<!-- criação do formulário de contato -->
+	<div class="container">
+		<div class="divFormPrincipal">
+			<form id="formPrincipal" action="index.html" method="POST">
+
+			<!-- <?php 
+			if (isset($_POST['enviar'])) {
+				if (mail(trim($_POST['textemail']), trim($_POST['textassunto']), $_POST['textmensagem'], "from:isaac.profissionalTI@outlook.com")) {
+					$resultado = "Email enviado com sucesso !!";
+				}
+				else {
+					$resultado = "Erro ao enviar email !!";
+				}
+			}	
+
+				echo $resultado . "<br/><br/>";
+			?> -->
+
+				<div class="form-group">
+					<input type="text" name="textname" placeholder="Nome :" class="form-control">
+				</div>
+				<div class="form-group">
+					<input type="email" name="textemail" placeholder="Email :" class="form-control">
+				</div>
+				<div class="form-group">
+					<input type="text" name="textassunto" placeholder="Assunto :" class="form-control">
+				</div>
+				<div class="form-group">
+					<textarea placeholder="Escreva sua mensagem ..." class="form-control" name="textmensagem"></textarea>
+				</div>
+				<div id="btnEnviar">
+					<input type="submit" value="Enviar" name="enviar" class="btn btn-default">
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- --------------------------------------- -->
+
+	<!-- criação do footer rodapé -->
+	<div class="container" id="containerFluid">
+		<div class="divFooterPrincipal">
+			<div class="row">
+			<footer id="footerPrincipal">
+				<div id="link1" class="col-md-4 col-sm-4">
+					<a href="https://www.facebook.com/campeonato.osescolhidos/?fref=ts"><img src="img/faceLogo.png" alt="Facebook" id="social"></a>
+				</div>
+				<div id="link1" class="col-md-4 col-sm-4">
+					<a href="#"><img src="img/youtubeLogo.png" alt="Youtube" id="social"></a>
+				</div>
+				<div id="link1" class="col-md-4 col-sm-4">
+					<a href="#"><img src="img/instagramLogo.png" alt="Instagram" id="social"></a>
+				</div>
+			</footer>
+			</div>
+		</div>
+	</div>
+	<!-- --------------------------------------- -->
+
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/anim.js"></script>
+</body>
+</html>

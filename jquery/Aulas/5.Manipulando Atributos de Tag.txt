@@ -1,0 +1,10 @@
+$(function (){
+	$('a').attr('href', 'http://google.com');
+});
+
+------------------------------
+
+$(function (){
+	$('img').attr('width', '100');
+	$('img').attr('border', '5');
+});

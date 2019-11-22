@@ -1,0 +1,11 @@
+$(div).html("Novo texto")
+
+-------------------------
+
+$('li:eq(1)')
+$('li').eq(1)
+
+------------------------
+
+var segundoitem = $('li').eq(1);
+segundoitem.html("Item dois");

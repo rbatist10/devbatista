@@ -1,0 +1,34 @@
+.modal {
+	color: #000;
+}
+.total {
+	color: #FFF;
+}
+body {
+	width:100%;
+	height: 1000px;
+	position: relative;
+	background-image: url("../img/abstrato.jpg");
+	background-size: 100%;
+}
+.encerrar {
+	color: #FFF;
+}
+.tabela {
+	/*width: 1300px;*/
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+th {
+	text-align: center;
+}
+body .order_by {
+	display: inline-block;
+}
+body .ordenar {
+	color: #000;
+}
+.modal {
+	color: #000;
+}

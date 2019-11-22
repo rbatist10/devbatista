@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Largura inicial é do dispositivo atual -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<script type="text/javascript" src="bootstrap/js/jQuery.min.js"></script> <!-- Sempre o jQuery e depois o bootstrap -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container"> <!-- container-fluid serve para tela inteira -->
+			<h1>Meu primeiro sistema bootstrap</h1>
+			<p>Este é meu primeiro teste</p>
+
+			<!-- <div class="col-sm-3">B</div> xs - funciona até telefones (menor largura possível) -->
+			<!-- <div class="col-sm-3">A</div> sm - funciona até tablets, a partir disso as colunas ficam em baixo -->
+			<!-- <div class="col-sm-3">C</div> md - aguenta até tamanhos de desktops -->
+			<!-- <div class="col-sm-3">D</div> lg - apenas para monitores grandes -->
+
+			<!-- <blockquote> -- Para citações --
+				TESTE
+				<footer>Outro teste</footer>
+			</blockquote> -->
+
+			<!-- <dl> -- Lista de forma mais bem vista --
+				<dt>Café</dt>
+				<dd>Bebida quente</dd> -- Descrição do item acima --
+			</dl> -->
+			<hr/><br/><br/>
+			<!-- <p>blablabla <code>código</code></p> -- Para colocar "códigos" dentro do texto -- -->
+			<!-- <p>para salvar aperte <kbd>ctrl+s</kbd></p> -- Coloca um fundo preto na tag -- -->
+
+
+			<!-- <table class="table table-striped"></table> --(table-striped deixa com uma fácil visualização)-- -->
+
+
+			<!-- <img src="" alt="" class="img-responsive"> -- Classe "img-responsive" adapta a imagem para que a mesma fique responsiva -- -->
+
+
+			<!-- <button class="btn btn-success"></button> -- btn -> classe || btn-success -> estilo do botão -- -->
+			
+
+			<!-- <div class="btn-group">
+				<button></button>
+				<button></button>  -- PARA CRIAR GRUPOS DE BOTÕES --
+				<button></button>
+			</div> -->
+
+
+			<!-- <div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Escolha <span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">PHP</a></li>
+				</ul>
+			</div> -->
+
+
+			<!-- <div class="jumbotron">
+				<h1>Curso de Bootstrap</h1>
+				<p>O Boostrap é o mais popular framework de HTML, CSS e Javascript para criação de designs responsivos na internet.</p>
+			</div> -->
+
+
+			<!-- <div class="alert alert-success fade in">
+				<a href="#" class="close" data-dimiss="alert" aria-label="close">&times;</a>
+				Criado com sucesso!
+			</div> -->
+
+
+			<!-- <div class="row">
+				<div class="col-sm-6">
+					<div class="panel panel-success">
+						<div class="panel-heading">Esportes</div>
+						<div class="panel-body">Conteúdo do painel</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="panel panel-danger">
+						<div class="panel-heading">Política</div>
+						<div class="panel-body">Conteúdo do painel</div>
+					</div>
+				</div>
+			</div> -->
+						
+
+			<!-- <button data-toggle="collapse" data-target="#teste">Collapse</button>
+			<div id="teste" class="collapse">
+				Alguma frase qualquer
+			</div> -->
+
+			
+			<!-- <ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#home" data-toggle="tab">HOME</a>
+				</li>
+				<li>
+					<a href="#sobre" data-toggle="tab">SOBRE</a>
+				</li>
+				<li>
+					<a href="#contato" data-toggle="tab">CONTATO</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="home" class="tab-pane active in fade"> -- JÁ COMEÇA EXIBINDO --
+					HOME
+				</div>
+				<div id="sobre" class="tab-pane fade">
+					SOBRE
+				</div>
+				<div id="contato" class="tab-pane fade">
+					CONTATO
+				</div>
+			</div> -->
+
+
+			<!-- <ul class="pagination">
+				<li class="active"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+			</ul> -->
+
+
+			<!-- <ul class="pager">
+				<li class="previous"><a href="">Anterior</a></li>
+				<li class="next"><a href="">Próximo</a></li>
+			</ul> -->
+
+			
+			<!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a href="" class="navbar-brand">MinhaEmpresa.com</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li><a href="">HOME</a></li>
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">EMPRESA<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="">Estrutura</a></li>
+								<li><a href="">Cultura</a></li>
+								<li><a href="">Carreira</a></li>
+							</ul>
+						</li>
+						<li><a href="">CONTATO</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="">LOGIN</a></li>
+					</ul>
+				</div>
+			</nav> -->
+
+
+			<!-- <form method="POST">
+				<div class="form-group">
+					E-mail:<br/>
+					<input type="email" name="email" class="form-control" /><br/><br/>
+				</div>
+				<div class="form-group">
+					Senha:<br/>
+					<input type="password" name="senha" /><br/><br/>
+				</div>
+				
+				<input type="submit" value="entrar" class=" btn btn-default" />
+			</form> -->
+
+
+			<button class="btn btn-info" data-toggle="modal" data-target="#janela">Abrir Modal</button>
+
+			<div id="janela" class="modal" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal</h4>
+						</div>
+						<div class="modal-body">
+							<p>Conteúdo do modal</p>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</body>
+</html>

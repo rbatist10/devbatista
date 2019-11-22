@@ -1,0 +1,75 @@
+/* 	Theme Name : Next Host
+	Author : Redcheap Theme
+	Author URL : http://www.rctheme.com
+    Version : 1.0.0
+    Created: 29 October 2017
+*/
+
+/* ======== Primary Color CSS Start ======== */
+
+.background_primary {
+	background-color: #cc3333;
+}
+.primary_text {
+	color: #cc3333;
+}
+ul.powerful_list li:before {
+	color: #cc3333;
+}
+hr {
+	border-top: 3px solid #cc3333;
+}
+.btn_primary {
+	background: #cc3333;
+}
+.top_bar ul li a:hover {
+	border-color: #cc3333;
+}
+.navbar-bootsnipp {
+	background-color: #cc3333;
+}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a {
+	border-left: 0px solid #cc3333;
+}
+.about_company .company_year {
+	background: #cc3333;
+}
+.why_box .why_sep {
+	background:#cc3333;
+}
+.why_box2:hover i, .why_box2:hover h4 {
+	color:#cc3333;
+}
+.border_effect::before {
+ border-bottom: 1px solid #cc3333;
+ border-left: 1px solid #cc3333;
+}
+.border_effect::after {
+ border-top: 1px solid #cc3333;
+ border-right: 1px solid #cc3333;
+}
+.counter-hover:before {
+	background: #cc3333;
+}
+.post-module .post-content .category {
+	background: #cc3333;
+}
+.blog-date {
+	background: #cc3333;
+}
+.accordian_main .accordion-section-title {
+	border-left: 10px solid #cc3333;
+}
+.accordian_main .accordion-section-title.active, 
+.accordion-section-title:hover {
+	background-color: #cc3333;
+}
+.accordian_main .accordion-section-content {
+	border: 1px solid #cc3333;
+}
+section.contact_form .form-control:focus {
+    border-color: #cc3333;
+}
+.footer_top {
+	background: #cc3333;
+}

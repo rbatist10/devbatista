@@ -1,0 +1,480 @@
+/* Medium Layout: 1367px. */
+
+@media only screen and (min-width: 1200px) and (max-width: 1367px) {
+
+}
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .portfolio-area .shuffleFilter label.btn {
+        font-size: 16px;
+    }
+    .single-pricing .sp-head .spp-price p {
+        font-size: 26px;
+    }
+    .single-pricing .sp-head .spp-price {
+        padding-top: 15px;
+    }
+    .single-pricing ul.pricing-list li {
+        font-size: 16px;
+    }
+    .single-pricing .sp-head .spp-name h4 {
+        font-size: 20px;
+    }
+    a.pricing-btn {
+        padding: 8px 30px;
+    }
+    .single-hww .sw-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .single-hww .sw-text h4 {
+        font-size: 22px;
+        line-height: 18px;
+        margin: 12px auto 10px;
+    }
+    
+    .single-hww .sw-text a {
+        font-size: 16px;
+    }
+    .single-blog .sb-head .sb-meta ul li,.single-blog .sb-head .sb-meta ul li a {
+        font-size: 12px;
+    }
+    
+    .single-blog .sb-text {
+        padding: 15px 25px;
+    }
+    
+    .single-blog .sb-text h4 {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 12px auto;
+    }
+    
+    .single-blog .sb-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .single-blog .sb-text a {
+        font-size: 14px;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+ 
+.orion-nav ul.navbar-nav li.nav-item a:hover:after,
+.orion-nav ul.navbar-nav li.nav-item a.active:after {
+   display:none;
+}
+
+ .hero-content .hero-text h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    
+    .hero-content .hero-text p {
+        font-size: 14px;
+        margin: 12px auto;
+    }
+    
+    .hero-content .hero-text a {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 10px 30px;
+    }
+    
+    .hero-content .hero-text {
+        padding: 60px 0px;
+    }
+    
+    .hero-content {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .section-title span {}
+    
+    .section-title h3 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    .section-title p {
+        font-size: 16px;
+    }
+    
+    .single-features .sf-text h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .single-features .sf-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .single-features .sf-icon {
+        padding: 15px;
+    }
+    
+    .single-features .sf-icon img {
+        max-width: 40px;
+    }
+    
+    .single-features .sf-text a.sf-btn {
+        font-size: 14px;
+        padding: 10px 22px;
+        line-height: 14px;
+        margin-bottom: 0px;
+    }
+    
+    .section-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    a.rm-btn {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .watch-video .video-area {
+        margin: 60px auto;
+    }
+    
+    .single-team .st-info h4 {
+        font-size: 14px;
+    }
+    
+    .single-team .st-info p {
+        font-size: 12px;
+    }
+    
+    .portfolio-area .shuffleFilter label.btn {
+        font-size: 14px;
+        padding: 0px 0px;
+        margin: 2px;
+    }
+    
+    .portfolio-area .shuffleFilter label.btn:after {
+        height: 14px;
+        right: -6px;
+    }
+
+	.single-hww {padding: 30px 30px;}
+    
+    .portfolio-shuffle {
+        max-width: 665px;
+        margin: 0 auto;
+    }
+    .footer-widget h4 {
+        font-size: 18px;
+    }
+    
+    .footer-widget .footer-links ul.fl li a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .footer-widget .footer-links ul.fl li {
+        font-size: 10px;
+        margin: 5px auto;
+        line-height: 18px;
+    }
+    
+    .footer-widget .footer-links ul.fl {
+        margin: 20px auto;
+    }
+    
+    .footer-widget .footer-links ul.footer-social li a {
+        font-size: 14px;
+    }
+    
+    .footer-widget .footer-links ul.footer-social li {
+        margin: 3px;
+    }
+    .single-pricing .sp-head .spp-name {
+        float: unset;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .single-pricing .sp-head .spp-price {
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .single-pricing .sp-head .spp-price p {
+        font-size: 28px;
+    }
+    
+    .single-pricing .sp-head .spp-name h4 {
+        font-size: 20px;
+    }
+    
+    .single-pricing ul.pricing-list li {
+        font-size: 12px;
+        margin: 2px auto;
+        line-height: 20px;
+    }
+    
+    .single-pricing .sp-button {
+        margin: 20px auto;
+    }
+    
+    a.pricing-btn {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px 22px;
+    }
+    
+    .single-pricing {
+        padding-bottom: 10px;
+    }
+    
+    .single-hww .sw-text h4 {
+        font-size: 20px;
+    }
+    
+    .single-hww .sw-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .single-hww .sw-text a {
+        font-size: 14px;
+        margin: 10px auto;
+    }
+    
+    .single-blog .sb-head .sb-meta ul li a, .single-blog .sb-head .sb-meta ul li,.single-blog .sb-head .sb-meta ul li a, .single-blog .sb-head .sb-meta ul li i {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .single-blog .sb-head .sb-meta ul {
+        padding: 10px 5px;
+    }
+    
+    .single-blog .sb-text h4 {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 5px auto;
+    }
+    
+    .single-blog .sb-text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .single-blog .sb-text a {
+        font-size: 12px;
+    }
+    
+    .single-blog .sb-text {
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .orion-nav ul.navbar-nav {
+        text-align: center;
+        background-color: #5e4bed;
+    }
+    button.navbar-toggler {
+        color: #fff;
+        background-color: #1bc26c;
+        padding: 8px 12px;
+    }
+    .features-area:before,
+    .blog-area:before,
+    .portfolio-area:before {
+        display: none;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .customer-review .cr-next-prev{
+        display: none;
+    }
+    .section-title h3 {
+        font-size: 30px;
+        line-height: 44px;
+        margin: 5px auto;
+    }
+    
+    .section-title p {
+        font-size: 14px;
+    }
+    .portfolio-area .shuffleFilter {
+        margin: 25px auto;
+        text-align: center;
+    }
+    
+    .portfolio-area .shuffleFilter label.btn {
+        font-size: 14px;
+    }
+    .portfolio-shuffle {
+        position: relative;
+        max-width: 330px;
+        margin: 0 auto;
+    }
+    .portfolio-area .shuffleFilter label.btn:after {
+        position: absolute;
+        content: '';
+        height: 16px;
+    }
+    .single-pricing .sp-head .spp-name {
+        float: unset;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .single-pricing .sp-head .spp-price {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .single-pricing .sp-head .spp-price p {
+        font-size: 28px;
+    }
+    
+    .single-pricing .sp-head .spp-name h4 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    
+    .single-pricing ul.pricing-list li {
+        font-size: 16px;
+        margin: 8px auto;
+        line-height: 20px;
+    }
+    .single-pricing .sp-button {
+        margin: 20px auto;
+    }
+    
+    a.pricing-btn {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px 22px;
+    }
+    
+    .single-pricing {
+        padding-bottom: 10px;
+    }
+	.watch-video .video-area {margin-top:60px;}	
+	.single-team {max-width: 355px;}
+	.st-img img {width: 355px;}
+    .footer-area {
+        background-color: #384357;
+    }
+    .newsletter-area {
+        padding: 65px 0px 25px;
+    }
+    
+
+    .footer-widget-area {
+        text-align: center;
+    }
+
+    .footer-logo {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .footer-widget .footer-links ul.fl {
+        margin: 25px auto;
+    }
+
+    .footer-widget {
+        position: relative;
+        margin-bottom: 80px;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+.watch-video .video-area {margin-top:60px;}	
+.single-blog {
+	margin-top:30px;
+	max-width: 100%;
+}
+.single-blog .sb-head .sb-img img {
+	width: 100%;
+}
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+    .single-blog .sb-head .sb-meta ul li,.single-blog .sb-head .sb-meta ul li a {
+        font-size: 12px;
+    }
+    
+    .single-blog .sb-text {
+        padding: 15px 25px;
+    }
+    
+    .single-blog .sb-text h4 {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 12px auto;
+    }
+    
+    .single-blog .sb-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .single-blog .sb-text a {
+        font-size: 14px;
+    }
+
+    .hero-content .hero-text h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    
+    .hero-content .hero-text p {
+        font-size: 14px;
+        margin: 12px auto;
+    }
+    
+    .hero-content .hero-text a {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 10px 30px;
+    }
+    
+    .hero-content .hero-text {
+        padding: 60px 0px;
+    }
+    
+    .hero-content {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .section-title span {}
+    
+    .section-title h3 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    .section-title p {
+        font-size: 16px;
+    }
+    
+}

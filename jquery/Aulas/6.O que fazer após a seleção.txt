@@ -1,0 +1,9 @@
+$(function (){
+	$('#teste').html('Texto alterado.');
+});
+
+---------------------
+
+$(function (){
+	$('#teste').find('button').addClass('estilo');
+});

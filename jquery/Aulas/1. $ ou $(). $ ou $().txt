@@ -1,0 +1,3 @@
+// 1. $ ou $()
+$(elemento).acao // Está executando uma ação que pode ser ou não do jQuery, e é executado no elemento que pode ser N coisas
+$.acao // uma ação do próprio jquery
