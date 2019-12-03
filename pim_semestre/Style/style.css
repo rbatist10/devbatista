@@ -112,6 +112,7 @@ header {
     height: 100px;
     background-color: #cae1f1;
 }
+
 /*Aplicativo mobile */
 @media (max-width: 768px) {
     .max-header {
@@ -195,6 +196,7 @@ main section {
     font-size: 1em;
     color: #2574a9;
 }
+
 main section:nth-child(odd) {
     height: 100vh;
     background-color: #cae1f1;

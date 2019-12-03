@@ -1,20 +1,18 @@
-<?php 
+<?php
 
-$dsn = "mysql:dbname=pim_semestre;host=localhost;charset=utf8";
-$dbuser = "root";
-$dbpass = "";
-
-try {
+$dsn = 'mysql:host=localhost;dbname=pim_semestre';
+$username = 'root';
+$password = '';
+		
+try{
 
 	global $db;
-	$db = new PDO($dsn, $dbuser, $dbpass);
+	// Criar conexão
+	$db = new PDO($dsn, $username, $password);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	// echo "conectou";
 
-} catch (PDOException $e) {
+	} catch (PDOException $e){
 
-	echo "Falha de conexão: ".$e->getMessage();
-
-}
-
+		echo "Falha de conexão: ".$ex->getMessage();
+	}
 ?>

@@ -14,8 +14,8 @@ if(isset($_POST['nome']) && !empty($_POST['email'])) {
 		$_SESSION['email'] = $email;
 		
 		header("Location: ./lista.php");
-
 }
+
 ?>
 <!DOCTYPE html>
 <html>

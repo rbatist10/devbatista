@@ -2,36 +2,34 @@
 
 require 'conexao.php';
 
-$nome = $_POST['nome'];
-$rg = $_POST['rg'];
-$cpf = $_POST['cpf'];
-$cnh = $_POST['cnh'];
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
-$celular = $_POST['celular'];
-$endereco = $_POST['endereco'];
+$placa = $_POST['placa'];
+$modelo = $_POST['modelo'];
+$ano = $_POST['ano'];
+$chassi = $_POST['chassi'];
+$quilometragem = $_POST['quilometragem'];
+$categoria = $_POST['categoria'];
 
 // $dados = $_POST;
 // print_r ($dados);
 
-$sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, Email = :email, Telefone = :telefone, Celular = :celular, Endereco = :endereco";
+// $sql = "SELECT * FROM table WHERE x";
+// $sql = $db->query($sql)
+
+$sql = "INSERT INTO veiculo SET placa = :placa, modelo = :modelo, ano = :ano, chassi = :chassi, quilometragem = :quilometragem, categoria = :categoria, disponivel = 0";
 	
 	$sql = $db->prepare($sql);
 	// $sql->execute($dados);
 	
-	$sql->bindValue(":nome", $nome);
-	$sql->bindValue(":rg", $rg);
-	$sql->bindValue(":cpf", $cpf);
-	$sql->bindValue(":cnh", $cnh);
-	$sql->bindValue(":email", $email);
-	$sql->bindValue(":telefone", $telefone);
-	$sql->bindValue(":celular", $celular);
-	$sql->bindValue(":endereco", $endereco);
+	$sql->bindValue(":placa", $placa);
+	$sql->bindValue(":modelo", $modelo);
+	$sql->bindValue(":ano", $ano);
+	$sql->bindValue(":chassi", $chassi);
+	$sql->bindValue(":quilometragem", $quilometragem);
+	$sql->bindValue(":categoria", $categoria);
 
 	$sql->execute();
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head lang="pt-br">
@@ -77,7 +75,7 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
         <section id="./index.php">
             <form action="./index2.php#cliente">
                 <div>
-                    <label for="cpf">Cliente Cadastrado</label>
+                    <label for="cpf">Veiculo Cadastrado</label>
                 </div>
             </form>
         </section>

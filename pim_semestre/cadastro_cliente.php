@@ -1,37 +1,6 @@
-<?php
-
-require 'conexao.php';
-
-$nome = $_POST['nome'];
-$rg = $_POST['rg'];
-$cpf = $_POST['cpf'];
-$cnh = $_POST['cnh'];
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
-$celular = $_POST['celular'];
-$endereco = $_POST['endereco'];
-
-// $dados = $_POST;
-// print_r ($dados);
-
-$sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, Email = :email, Telefone = :telefone, Celular = :celular, Endereco = :endereco";
-	
-	$sql = $db->prepare($sql);
-	// $sql->execute($dados);
-	
-	$sql->bindValue(":nome", $nome);
-	$sql->bindValue(":rg", $rg);
-	$sql->bindValue(":cpf", $cpf);
-	$sql->bindValue(":cnh", $cnh);
-	$sql->bindValue(":email", $email);
-	$sql->bindValue(":telefone", $telefone);
-	$sql->bindValue(":celular", $celular);
-	$sql->bindValue(":endereco", $endereco);
-
-	$sql->execute();
-
+<?php 
+include "conexao.php";
 ?>
-
 <!DOCTYPE html>
 <html>
 <head lang="pt-br">
@@ -53,6 +22,7 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
           
         }
         </script>
+
 </head>
 <body>
     <header class="max-header">
@@ -66,7 +36,7 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
                 <ul>
                     <li><a href="./cadastro.php">Cadastro</a></li>
                     <li><a href="./consulta.php">Consulta</a></li>
-                    <li><a href="./quemsomos/php">Quem Somos</a></li>
+                    <li><a href="./quemsomos.php">Quem Somos</a></li>
                     <li><a href="./contato.php">Contato</a></li>
                 </ul>
             </nav>
@@ -74,10 +44,19 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
     </header>
     <section class="ghost"></section>
     <main>
-        <section id="./index.php">
-            <form action="./index2.php#cliente">
+        <section id="cliente">
+            <form method="POST" action="cliente.php">
                 <div>
-                    <label for="cpf">Cliente Cadastrado</label>
+                    Nome: <input type="text" name="nome" size="30" placeholder="Nome completo" required></br>
+                    RG: <input type="text" name="rg" size="30" placeholder="Numero de RG" required maxlength="12" OnKeyPress="formatar('##.###.###-#', this)"></br>
+                    CPF: <input type="text" name="cpf" size="30" placeholder="Numero de CPF" required maxlength="14" OnKeyPress="formatar('###.###.###-##', this)"></br>
+                    CNH: <input type="text" name="cnh" size="30" placeholder="Numero da CNH" required></br>
+                    Email: <input type="email" name="email" size="30" placeholder="Seu Email" required></br>
+                    Telefone: <input type="text" name="telefone" size="30" placeholder="Seu Telefone " maxlength="12" OnKeyPress="formatar('##.####-####', this)"></br>
+                    Celular: <input type="text" name="celular"  placeholder="Seu Celular" required maxlength="14" OnKeyPress="formatar('##.####-####', this)"></br>
+                    Endereço: <input type="text" name="endereco" placeholder="Seu Endereço" required></br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
                 </div>
             </form>
         </section>

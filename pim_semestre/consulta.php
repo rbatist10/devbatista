@@ -1,35 +1,5 @@
 <?php
-
-require 'conexao.php';
-
-$nome = $_POST['nome'];
-$rg = $_POST['rg'];
-$cpf = $_POST['cpf'];
-$cnh = $_POST['cnh'];
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
-$celular = $_POST['celular'];
-$endereco = $_POST['endereco'];
-
-// $dados = $_POST;
-// print_r ($dados);
-
-$sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, Email = :email, Telefone = :telefone, Celular = :celular, Endereco = :endereco";
-	
-	$sql = $db->prepare($sql);
-	// $sql->execute($dados);
-	
-	$sql->bindValue(":nome", $nome);
-	$sql->bindValue(":rg", $rg);
-	$sql->bindValue(":cpf", $cpf);
-	$sql->bindValue(":cnh", $cnh);
-	$sql->bindValue(":email", $email);
-	$sql->bindValue(":telefone", $telefone);
-	$sql->bindValue(":celular", $celular);
-	$sql->bindValue(":endereco", $endereco);
-
-	$sql->execute();
-
+include "conexao.php";
 ?>
 
 <!DOCTYPE html>
@@ -66,7 +36,7 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
                 <ul>
                     <li><a href="./cadastro.php">Cadastro</a></li>
                     <li><a href="./consulta.php">Consulta</a></li>
-                    <li><a href="./quemsomos/php">Quem Somos</a></li>
+                    <li><a href="./quemsomos.php">Quem Somos</a></li>
                     <li><a href="./contato.php">Contato</a></li>
                 </ul>
             </nav>
@@ -74,14 +44,25 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
     </header>
     <section class="ghost"></section>
     <main>
-        <section id="./index.php">
-            <form action="./index2.php#cliente">
+        <section id="cadastro">
+            <form action="./consulta_dados_cliente.php">
                 <div>
-                    <label for="cpf">Cliente Cadastrado</label>
+                    <label for="cpf">Consulta de Cliente</label>
+                </div>
+                <div class="button">
+                    <input type="submit" name="Pesquisar" value="Pesquisar">
+                </div>
+            </form>
+            <form action="./consulta_dados_veiculo.php">
+                <div>
+                    <label for="cpf">Consulta de Automovel</label>
+                </div>
+                <div class="button">
+                    <input type="submit" name="Pesquisar" value="Pesquisar">
                 </div>
             </form>
         </section>
-        </main>
+    </main>
     <script type="text/javascript" src="Scripts/script.js"></script>
 </body>
 </html> 

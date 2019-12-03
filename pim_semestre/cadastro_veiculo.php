@@ -1,37 +1,6 @@
-<?php
-
-require 'conexao.php';
-
-$nome = $_POST['nome'];
-$rg = $_POST['rg'];
-$cpf = $_POST['cpf'];
-$cnh = $_POST['cnh'];
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
-$celular = $_POST['celular'];
-$endereco = $_POST['endereco'];
-
-// $dados = $_POST;
-// print_r ($dados);
-
-$sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, Email = :email, Telefone = :telefone, Celular = :celular, Endereco = :endereco";
-	
-	$sql = $db->prepare($sql);
-	// $sql->execute($dados);
-	
-	$sql->bindValue(":nome", $nome);
-	$sql->bindValue(":rg", $rg);
-	$sql->bindValue(":cpf", $cpf);
-	$sql->bindValue(":cnh", $cnh);
-	$sql->bindValue(":email", $email);
-	$sql->bindValue(":telefone", $telefone);
-	$sql->bindValue(":celular", $celular);
-	$sql->bindValue(":endereco", $endereco);
-
-	$sql->execute();
-
+<?php 
+include "conexao.php";
 ?>
-
 <!DOCTYPE html>
 <html>
 <head lang="pt-br">
@@ -53,6 +22,7 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
           
         }
         </script>
+
 </head>
 <body>
     <header class="max-header">
@@ -66,7 +36,7 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
                 <ul>
                     <li><a href="./cadastro.php">Cadastro</a></li>
                     <li><a href="./consulta.php">Consulta</a></li>
-                    <li><a href="./quemsomos/php">Quem Somos</a></li>
+                    <li><a href="./quemsomos.php">Quem Somos</a></li>
                     <li><a href="./contato.php">Contato</a></li>
                 </ul>
             </nav>
@@ -74,14 +44,22 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
     </header>
     <section class="ghost"></section>
     <main>
-        <section id="./index.php">
-            <form action="./index2.php#cliente">
+        <section id="veiculo">
+            <form method="POST" action="veiculo.php">
                 <div>
-                    <label for="cpf">Cliente Cadastrado</label>
+                    Placa: <input type="text" name="placa" placeholder="Placa" required maxlength="8" OnKeyPress="formatar('###-.###', this)"></br>
+                    Modelo: <input type="text" name="modelo" placeholder="Modelo do carro" required></br>
+                    Ano: <input type="text" name="ano" placeholder="Ano de fabricação" required maxlength="4"></br>
+                    <!-- Cor: <input type="text" name="cor" placeholder="Cor do veiculo" required></br> -->
+                    Chassi: <input type="text" name="chassi" placeholder="Numero de chassi" required></br>
+                    Quilometragem: <input type="text" name="quilometragem" placeholder="Numero de KM "></br>
+                    Categoria: <input type="text" name="categoria" placeholder="Categoria" required></br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
                 </div>
             </form>
         </section>
-        </main>
+    </main>
     <script type="text/javascript" src="Scripts/script.js"></script>
 </body>
 </html> 

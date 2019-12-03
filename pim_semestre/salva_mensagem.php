@@ -3,33 +3,20 @@
 require 'conexao.php';
 
 $nome = $_POST['nome'];
-$rg = $_POST['rg'];
-$cpf = $_POST['cpf'];
-$cnh = $_POST['cnh'];
 $email = $_POST['email'];
-$telefone = $_POST['telefone'];
-$celular = $_POST['celular'];
-$endereco = $_POST['endereco'];
-
-// $dados = $_POST;
-// print_r ($dados);
-
-$sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, Email = :email, Telefone = :telefone, Celular = :celular, Endereco = :endereco";
+$assunto = $_POST['assunto'];
+$mensagem = $_POST['mensagem'];
 	
-	$sql = $db->prepare($sql);
-	// $sql->execute($dados);
-	
+$sql = "INSERT INTO mensagens_contatos SET nome = :nome, email = :email, assunto = :assunto, mensagem = :mensagem";
+
+$sql = $db->prepare($sql);
+
 	$sql->bindValue(":nome", $nome);
-	$sql->bindValue(":rg", $rg);
-	$sql->bindValue(":cpf", $cpf);
-	$sql->bindValue(":cnh", $cnh);
 	$sql->bindValue(":email", $email);
-	$sql->bindValue(":telefone", $telefone);
-	$sql->bindValue(":celular", $celular);
-	$sql->bindValue(":endereco", $endereco);
+	$sql->bindValue(":assunto", $assunto);
+	$sql->bindValue(":mensagem", $mensagem);
 
 	$sql->execute();
-
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +64,7 @@ $sql = "INSERT INTO cliente SET Nome = :nome, RG = :rg, CPF = :cpf, CNH = :cnh, 
         <section id="./index.php">
             <form action="./index2.php#cliente">
                 <div>
-                    <label for="cpf">Cliente Cadastrado</label>
+                    <label for="cpf">MENSAGEM ENVIADA COM SUCESSO</label>
                 </div>
             </form>
         </section>

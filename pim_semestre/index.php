@@ -1,5 +1,5 @@
-<?php 
-require 'conexao.php';
+<?php
+include "conexao.php";
 ?>
 
 <!DOCTYPE html>
@@ -34,21 +34,35 @@ require 'conexao.php';
                 <div class="hamburguer"></div>
             <nav class="nav-bar max-nav">
                 <ul>
-                    <li><a href="#perfil">Perfil</a></li>
-                    <li><a href="#consulta">Consulta</a></li>
-                    <li><a href="#despesas">Despesas</a></li>
-                    <li><a href="#ajuda">Ajuda</a></li>
+                    <li><a href="./cadastro.php">Cadastro</a></li>
+                    <li><a href="./consulta.php">Consulta</a></li>
+                    <li><a href="./quemsomos.php">Quem Somos</a></li>
+                    <li><a href="./contato.php">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="ghost"></section>
     <main>
-        <section id="perfil">
-            <form action="./index2.php#perfil">
+        <section id="">
+            <form action="./index2.php#cliente">
                 <div>
-                    <label for="cpf">Digite seu CPF</label>
-                    <input type="text" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" >
+                    SEJA BEM-VINDO
+                </div>
+            </form>
+        </section>
+        <!-- <section id="cadastro">
+            <form action="./index2.php#cliente">
+                <div>
+                    <label for="cpf">Cadastro de Cliente</label>
+                </div>
+                <div class="button">
+                    <input type="submit" name="enviar" value="enviar">
+                </div>
+            </form>
+            <form action="./index2.php#veiculo">
+                <div>
+                    <label for="cpf">Cadastro de Automovel</label>
                 </div>
                 <div class="button">
                     <input type="submit" name="enviar" value="enviar">
@@ -56,38 +70,41 @@ require 'conexao.php';
             </form>
         </section>
         <section id="consulta">
-            <form action="./index2.php#consulta">
+            <form action="./index2.php#cliente">
                 <div>
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" id="cidade" />
+                    <label for="cpf">Consulta de Cliente</label>
+                </div>
+                <div class="button">
+                    <input type="submit" name="enviar" value="enviar">
+                </div>
+            </form>
+            <form action="./index2.php#veiculo">
+                <div>
+                    <label for="cpf">Consulta de Automovel</label>
+                </div>
+                <div class="button">
+                    <input type="submit" name="enviar" value="enviar">
+                </div>
+            </form>
+        </section>
+        <section id="quemsomos">
+            <form action="http://localhost/Omnitech/index2.html#consulta">
+                <div>
+                    <label for="cidade">Quem Somos:</label>
+                </div>
+            </form>
+        </section>
+        <section id="contato">
+            <form action="http://localhost/Omnitech/index2.html#perfil#despesas">
+                <div>
+                    <label for="contato">Contato:</label>
+                    <input type="text" id="contato" />
                 </div>
                 <div class="button">
                     <button type="submit">Pesquisar</button>
                 </div>
             </form>
-        </section>
-        <section id="despesas">
-            <form action="./index2.php#perfil#despesas">
-                <div>
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" id="cidade" />
-                </div>
-                <div class="button">
-                    <button type="submit">Pesquisar</button>
-                </div>
-            </form>
-        </section>
-        <section id="ajuda">
-            <form action="./index2.php#ajuda">
-                <div>
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" id="cidade" />
-                </div>
-                <div class="button">
-                    <button type="submit">Pesquisar</button>
-                </div>
-            </form>
-        </section>
+        </section> -->
     </main>
     <script type="text/javascript" src="Scripts/script.js"></script>
 </body>
