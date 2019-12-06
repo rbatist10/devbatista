@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-//PDOStatement é bastante utilizado para melhorar a segurança do PHP + Banco de dados, quando é inserido dados através de variáveis
+// PDOStatement é bastante utilizado para melhorar a segurança do PHP + Banco de dados, quando é inserido dados através de variáveis
 $nome = 'nome';
 $id = X;
 
