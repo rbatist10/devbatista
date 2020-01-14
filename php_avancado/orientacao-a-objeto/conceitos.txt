@@ -1,0 +1,25 @@
+Você vai ter um objeto na programação e dentro dele terá diversas características específicas do objeto
+
+Ex:
+
+PESSOA
+	nome
+	idade
+	endereço
+	...
+
+	anda
+	corre
+	deita
+	levanta
+
+RAFAEL
+	nome = Rafael
+	idade = 25
+	endereco = sp
+	...
+
+	anda
+	corre
+	deita
+	levanta

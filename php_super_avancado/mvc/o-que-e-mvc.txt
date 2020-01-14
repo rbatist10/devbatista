@@ -1,0 +1,20 @@
+O que é mvc?
+
+M = model
+V = view
+C = controller
+
+- é uma forma de organizar seu código para que facilite a manutenção dele.
+- rodar mais rápido
+- digitar menos códigos
+- melhora a otimização e manutenção
+- separa parte visual de parte sistêmica
+
+Controller
+- recebe e processa a requisição do usuário
+
+Model
+- pega uma informação específica (require)
+
+View
+- parte que o usuário irá visualizar (apenas html com quase nada de php)

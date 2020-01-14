@@ -7,7 +7,7 @@ try {
 /*
 1. Calcular a quantidade total de páginas.
 2. Definir o limite inserido na query ($p).
-3. Fazer a query com LIMIT.
+3. Fazer a query com LIMIT pra limitar os resultados.
 */
 
 $qtd_por_pagina = 10;
@@ -25,7 +25,7 @@ if (isset($_GET['p']) && !empty($_GET['p'])) {
 }
 $p = ($pg - 1) * $qtd_por_pagina;
 
-$sql = "SELECT * FROM posts LIMIT $p, $qtd_por_pagina";
+$sql = "SELECT * FROM posts ORDER BY id LIMIT $p, $qtd_por_pagina";
 $sql = $pdo->query($sql);
 
 if($sql->rowCount() > 0) {
@@ -35,6 +35,6 @@ if($sql->rowCount() > 0) {
 }
 echo "<hr/>";
 for ($q=0; $q < $paginas ; $q++) { 
-	echo '<a href="./?p='.($q + 1).'">[ '.($q + 1). ' ]</a>';
+	echo '<a href="./?p='.($q + 1).'">['.($q + 1). ']</a>';
 }
 ?>

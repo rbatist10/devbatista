@@ -16,7 +16,6 @@ class Post {
 			$this->titulo = $t;
 		}
 	}
-
 	public function addComentario($msg) {
 		$this->comentarios[] = $msg; // Adiciona o comentário no array
 		$this->contarComentarios(); // Conta quantos comentários tem

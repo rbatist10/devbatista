@@ -1,5 +1,5 @@
 <?php
-abstract class Animal {
+abstract class Animal { // É necessário criar uma classe abstrata pra habilitar funções abstratas
 	private $nome;
 	private $idade;
 

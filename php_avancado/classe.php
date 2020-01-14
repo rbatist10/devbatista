@@ -2,7 +2,7 @@
 
 class Usuario {
 
-	public function trocarSenha($senhaAtual, $novaSenha) { //Método da orientação a objeto
+	public function trocarSenha($senhaAtual, $novaSenha) { //Método(Função) da orientação a objeto
 
 		// Conexão a banco de dados;
 		// Verificar se a senha atual está correta (if);
@@ -27,6 +27,6 @@ class Usuario {
 
 /* private -> é usado para chamar funções ou métodos auxiliares que ajudarão no funcionamento da classe (só consegue acessar o método dentro da própria classe) */
 
-/* protected -> só poderá ser acessível pela classe, ou pelas classes que irão agregar com ela */
+/* protected -> só poderá ser acessível pela classe, ou pelas classes que irão agregar com ela. Geralmente usado com o extends */
 
 ?>

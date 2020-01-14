@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['nome']) && !empty($_POST['nome'])) {
+if(isset($_POST['nome']) && !empty($_POST['email'])) {
 
 	$nome = addslashes($_POST['nome']);
 	$email = addslashes($_POST['email']);
