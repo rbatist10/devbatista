@@ -1,0 +1,4 @@
+o que é cache ?
+
+- informações já processadas por uma máquina e salvo em algum local
+- só pega o resultado pós processamento

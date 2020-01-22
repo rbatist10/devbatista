@@ -1,0 +1,80 @@
+[
+{"type":"header","version":"4.7.9","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"escolhidos"},
+{"type":"table","name":"acessos","database":"escolhidos","data":
+[
+{"id":"276","ip":"::1","hora":"22:22:22"},
+{"id":"278","ip":"::1","hora":"11:46:28"},
+{"id":"271","ip":"127.0.0.1","hora":"23:13:30"},
+{"id":"277","ip":"::1","hora":"22:23:15"},
+{"id":"272","ip":"127.0.0.1","hora":"23:13:30"}
+]
+}
+,{"type":"table","name":"competidores","database":"escolhidos","data":
+[
+{"id":"34","casal":"t\u00e9\u00e9\u00e9ste","cavalheiro":"t\u00e9ste","data_nasc_c":"1994-01-13","cpf_c":"321.654.987-12","cel_c":"11 98681-0942","email_c":"batist11@gmail.com","dama":"Rafael Batista","data_nasc_d":"1994-01-13","cpf_d":"132.145.678-11","cel_d":"11 85477-8545","email_d":"rbatist10@gmail.com","pago":"1"},
+{"id":"33","casal":"teste","cavalheiro":"t\u00c3\u00a9ste","data_nasc_c":"1994-01-13","cpf_c":"321.654.987-12","cel_c":"11 98681-0942","email_c":"batist11@gmail.com","dama":"Rafael Batista","data_nasc_d":"1994-01-13","cpf_d":"132.145.678-11","cel_d":"11 85477-8545","email_d":"rbatist10@gmail.com","pago":"1"},
+{"id":"32","casal":"teste","cavalheiro":"t\u00c3\u00a9ste","data_nasc_c":"1994-01-13","cpf_c":"321.654.987-12","cel_c":"11 98681-0942","email_c":"batist11@gmail.com","dama":"Rafael Batista","data_nasc_d":"1994-01-13","cpf_d":"132.145.678-11","cel_d":"11 85477-8545","email_d":"rbatist10@gmail.com","pago":"1"},
+{"id":"31","casal":"teste","cavalheiro":"t\u00c3\u00a9ste","data_nasc_c":"1994-01-13","cpf_c":"321.654.987-12","cel_c":"11 98681-0942","email_c":"batist11@gmail.com","dama":"Rafael Batista","data_nasc_d":"1994-01-13","cpf_d":"132.145.678-11","cel_d":"11 85477-8545","email_d":"rbatist10@gmail.com","pago":"1"},
+{"id":"30","casal":"teste","cavalheiro":"t\u00c3\u00a9ste","data_nasc_c":"1994-09-13","cpf_c":"123.456.789-12","cel_c":"11 98681-0942","email_c":"batist11@gmail.com","dama":"Rafael Batista","data_nasc_d":"1994-09-13","cpf_d":"321.654.987-12","cel_d":"11 98681-9042","email_d":"rbatist10@gmail.com","pago":"1"},
+{"id":"29","casal":"teste","cavalheiro":"t\u00c3\u0192\u00c2\u00a9ste","data_nasc_c":"1994-09-13","cpf_c":"123.456.123-45","cel_c":"11 98681-9042","email_c":"batist11@gmail.com","dama":"Rafael Batista","data_nasc_d":"1994-09-13","cpf_d":"399.328.998-60","cel_d":"11 98681-9042","email_d":"brbatist@batista.com.br","pago":"0"},
+{"id":"28","casal":"t\u00c3\u00a9ste","cavalheiro":"t\u00c3\u00a9ste","data_nasc_c":"1994-09-13","cpf_c":"321.654.984-12","cel_c":"11 98681-9042","email_c":"batist11@gmail.com","dama":"t\u00c3\u00a9eeeste","data_nasc_d":"1994-09-09","cpf_d":"255.658.854-21","cel_d":"32 15465-7811","email_d":"teste@teste.com.br","pago":"0"},
+{"id":"27","casal":"1","cavalheiro":"2","data_nasc_c":"1994-09-13","cpf_c":"321.654.987-12","cel_c":"11 98681-9042","email_c":"batist11@gmail.com","dama":"t2","data_nasc_d":"2001-06-06","cpf_d":"123.123.456-12","cel_d":"11 96635-6588","email_d":"batist11@gmail.com","pago":"0"},
+{"id":"26","casal":"1","cavalheiro":"1","data_nasc_c":"1994-09-13","cpf_c":"123.123.123-12","cel_c":"11 98681-9042","email_c":"batist11@gmail.com","dama":"2","data_nasc_d":"2001-06-06","cpf_d":"321.654.987-12","cel_d":"11 98585-8452","email_d":"teste@tete","pago":"0"},
+{"id":"25","casal":"Rafael","cavalheiro":"Batista","data_nasc_c":"2000-09-13","cpf_c":"123.456.789-10","cel_c":"11 98681-9042","email_c":"batist11@gmail.com","dama":"teste2","data_nasc_d":"2002-09-13","cpf_d":"321.654.987-32","cel_d":"11 96325-8741","email_d":"teste1@hotmail.com","pago":"0"},
+{"id":"24","casal":"Rafael","cavalheiro":"Batista","data_nasc_c":"2000-09-13","cpf_c":"123.456.789-10","cel_c":"11 98681-9042","email_c":"batist11@gmail.com","dama":"teste2","data_nasc_d":"2002-09-13","cpf_d":"321.654.987-32","cel_d":"11 96325-8741","email_d":"teste1@hotmail.com","pago":"0"},
+{"id":"23","casal":"Rafael","cavalheiro":"Batista","data_nasc_c":"2000-09-13","cpf_c":"123.456.789-10","cel_c":"11 98681-9042","email_c":"batist11@gmail.com","dama":"teste2","data_nasc_d":"2002-09-13","cpf_d":"321.654.987-32","cel_d":"11 96325-8741","email_d":"teste1@hotmail.com","pago":"0"},
+{"id":"1","casal":"Rafael","cavalheiro":"Batista","data_nasc_c":"2000-09-13","cpf_c":"123.456.789-10","cel_c":"11 98681-9042","email_c":"batist11@gmail.com","dama":"teste2","data_nasc_d":"2002-09-13","cpf_d":"321.654.987-32","cel_d":"11 96325-8741","email_d":"teste1@hotmail.com","pago":"1"},
+{"id":"35","casal":"teste","cavalheiro":"t\u00e9ste","data_nasc_c":"1994-01-13","cpf_c":"321.654.987-12","cel_c":"11 98681-0942","email_c":"batist11@gmail.com","dama":"Rafael Batista","data_nasc_d":"1994-01-13","cpf_d":"132.145.678-11","cel_d":"11 85477-8545","email_d":"rbatist10@gmail.com","pago":"0"}
+]
+}
+,{"type":"table","name":"responsavel","database":"escolhidos","data":
+[
+{"id":"20","nome":"Rafael Batista","CPF":"321.654.987-41","competidor":"t2","id_competidor":"27"},
+{"id":"19","nome":"nilva","CPF":"321.654.987-41","competidor":"teste2","id_competidor":"25"},
+{"id":"18","nome":"Rafael Batista","CPF":"399.328.998-60","competidor":"Batista","id_competidor":"25"},
+{"id":"17","nome":"nilva","CPF":"321.654.987-41","competidor":"teste2","id_competidor":"24"},
+{"id":"16","nome":"Rafael Batista","CPF":"399.328.998-60","competidor":"Batista","id_competidor":"24"},
+{"id":"15","nome":"nilva","CPF":"321.654.987-41","competidor":"teste2","id_competidor":"23"},
+{"id":"14","nome":"Rafael Batista","CPF":"399.328.998-60","competidor":"Batista","id_competidor":"23"},
+{"id":"13","nome":"nilva","CPF":"321.654.987-41","competidor":"teste2","id_competidor":"22"},
+{"id":"12","nome":"Rafael Batista","CPF":"399.328.998-60","competidor":"Batista","id_competidor":"22"}
+]
+}
+,{"type":"table","name":"teste","database":"escolhidos","data":
+[
+{"id":"1","nome":"t\u00e9ste"},
+{"id":"2","nome":"t\u00e9ste"},
+{"id":"3","nome":"t\u00e9ste"}
+]
+}
+,{"type":"table","name":"usuarios","database":"escolhidos","data":
+[
+{"id":"1","nome":"Rafael Batista","email":"batist11@gmail.com","senha":"bc488c6cd08a683473d02e823e7ca135"}
+]
+}
+,{"type":"table","name":"usuarios_token","database":"escolhidos","data":
+[
+{"id":"1","id_usuario":"1","hash":"33aada9c620fb56b8359900519f5e1e4","used":"0","expirado_em":"2018-11-08 20:38:00"},
+{"id":"2","id_usuario":"1","hash":"08162ded34b0f65a61ad1e6185694b72","used":"0","expirado_em":"2018-11-08 20:54:00"},
+{"id":"3","id_usuario":"1","hash":"dd0d0981aabeaf03fb4090411957dd1c","used":"0","expirado_em":"2018-11-08 20:54:00"},
+{"id":"4","id_usuario":"1","hash":"75d725a818ebbd69246552141026c170","used":"1","expirado_em":"2018-11-08 20:55:00"},
+{"id":"5","id_usuario":"1","hash":"7e7e716b3ece82123ab1a3b54a928ddd","used":"1","expirado_em":"2018-11-08 21:12:00"},
+{"id":"6","id_usuario":"1","hash":"528af3bd02fde53a2cea5161d2a305ca","used":"1","expirado_em":"2018-11-08 21:13:00"},
+{"id":"7","id_usuario":"1","hash":"d7315df20529058c02d4270c696addf2","used":"1","expirado_em":"2018-11-08 21:14:00"},
+{"id":"8","id_usuario":"1","hash":"301a015b75833500386a38a4c9c45001","used":"1","expirado_em":"2018-11-08 21:14:00"},
+{"id":"9","id_usuario":"1","hash":"279012a9e33217b19248d0245c241f9c","used":"1","expirado_em":"2018-11-08 21:15:00"},
+{"id":"10","id_usuario":"1","hash":"8b1d293c24db4578c883e48c554db225","used":"1","expirado_em":"2018-11-08 21:16:00"},
+{"id":"11","id_usuario":null,"hash":"3a14e74782a8089f2ab20716a5ac6b80","used":"0","expirado_em":"2018-11-08 21:43:00"},
+{"id":"12","id_usuario":"1","hash":"a3534066dbd1c68b988ad5c0292580dd","used":"0","expirado_em":"2018-11-08 21:44:00"},
+{"id":"13","id_usuario":"1","hash":"8efa91fd19ecccfa286ed433b853437f","used":"0","expirado_em":"2018-11-08 21:45:00"},
+{"id":"14","id_usuario":"1","hash":"d497901f3cb0bd3c18de959134d5e513","used":"0","expirado_em":"2018-11-08 21:46:00"},
+{"id":"15","id_usuario":"1","hash":"e13c19b7a0f5d0011a3695c0c8ffcab5","used":"0","expirado_em":"2018-11-08 21:46:00"},
+{"id":"16","id_usuario":"1","hash":"2fcafcff0cdcaed3888c6ea6a0a4850f","used":"0","expirado_em":"2018-11-08 21:46:00"},
+{"id":"17","id_usuario":"1","hash":"37e0756c652ff00701319c82c17f8e7e","used":"0","expirado_em":"2018-11-08 21:47:00"},
+{"id":"18","id_usuario":"1","hash":"d4323bb5dc6a1e8a875e056aa69c6bfe","used":"0","expirado_em":"2018-11-08 21:48:00"},
+{"id":"19","id_usuario":"1","hash":"ade8cc7cd0383197d4065b5e07f19db7","used":"0","expirado_em":"2018-11-08 21:52:00"},
+{"id":"20","id_usuario":"1","hash":"226081427a14c63929ee84e4c1cda908","used":"0","expirado_em":"2018-11-08 21:53:00"}
+]
+}
+]
